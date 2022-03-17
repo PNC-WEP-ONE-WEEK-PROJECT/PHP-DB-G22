@@ -3,7 +3,6 @@
 require_once './models/post.php';
 $conts = getAllPost();
 foreach($conts as $cont):
-    // echo $cont['post_id'];
 ?>
 <div class="card">
     <div class="head ">
