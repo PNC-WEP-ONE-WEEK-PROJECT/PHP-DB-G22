@@ -12,12 +12,14 @@ require_once 'database.php';
 function addToPostList ($description,$user_id,$image)
 {
     global $database;
-    $conts=$database->prepare("INSERT INTO posts (description,user_id,image) VALUES (:description,:user_id,:image)");
-    $conts->execute([
-        ':description' => $description,
-        ':user_id' => $user_id,
-        ':image' => $image,
-    ]);
+    if($description != null && $image == null){
+        $conts=$database->prepare("INSERT INTO posts (description,user_id,image) VALUES (:description,:user_id,:image)");
+        $conts->execute([
+            ':description' => $description,
+            ':user_id' => $user_id,
+            ':image' => $image,
+        ]);
+    }
 }
 
 
@@ -45,7 +47,7 @@ function getPostById($id)
 function deletePost($id)
 {
     global $database;
-    $deleteCord = $database->prepare("DELETE FROM posts where id = :id");
+    $deleteCord = $database->prepare("DELETE FROM posts where post_id = :id");
     $deleteCord->execute([
         ':id' => $id,
     ]);

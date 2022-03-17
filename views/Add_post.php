@@ -1,5 +1,5 @@
 <?php
-require_once '../templates/header.php';
+    include_once('../templates/header.php');
 ?>
 <div class="container">
     <!-- Your code here -->
@@ -18,6 +18,3 @@ require_once '../templates/header.php';
         </div>
     </form>
 </div>
-<?php
-require_once '../templates/footer.php';
-?>

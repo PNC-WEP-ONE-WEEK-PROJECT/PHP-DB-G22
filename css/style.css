@@ -2,7 +2,6 @@ body{
     font-family: sans-serif;
     background:rgba(175, 169, 169, 0.767);
 }
-
 .container{
     width: 45%;
     height:70vh;
@@ -58,4 +57,37 @@ li a{
     font-weight: bold;
 }
 
+.card{
+    
+    margin: auto;
+    width: 80vh;
+    background: #ffffffc7;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
 
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head img{
+    width: 12vh;
+    height: 12vh;
+    border-radius: 40px;
+    padding: 10px;
+}
+.head strong {
+    margin-top: 20px;
+}
+.body img {
+    margin-left: 10%;
+    width: 80%;
+  
+}
+.option{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}

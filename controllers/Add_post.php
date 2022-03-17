@@ -10,5 +10,5 @@ if(isset($_POST))
     $statment = '../images/'.$image;
     move_uploaded_file($_FILES['img']['tmp_name'],$statment);
     addToPostList($text,1,$image);
-    header('location:../views/post_view.php');
+    header('location:../index.php');
 }
