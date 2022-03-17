@@ -2,7 +2,13 @@
 // link to database========================================
 require_once 'database.php';
 
-// ADD TO DATABASE=========================================
+
+// Create a new post
+// @param  string - $description : description of the post
+// @param  string - $user_id : description of the post
+// @param  string - $image : description of the post
+// @return boolean 
+// ADD POST TO DATABASE=========================================
 function addToPostList ($description,$user_id,$image)
 {
     global $database;
@@ -14,17 +20,18 @@ function addToPostList ($description,$user_id,$image)
     ]);
 }
 
-// SELECT ALL DATA FROM DATABASE==========================
-function getAllData()
+
+// SELECT ALL POST FROM DATABASE==========================
+function getAllPost()
 {
     global $database;
     $conts=$database->prepare("SELECT*FROM posts ORDER BY post_id DESC");
     $conts->execute();
-    $conts->fetchAll();
+    return $conts->fetchAll();
 }
 
-// SELECT A DATA FROM DATABASE BY ID=======================
-function getById($id)
+// SELECT  POST FROM DATABASE BY ID=======================
+function getPostById($id)
 {
     global $database;
     $cord = $database->prepare("SELECT * FROM posts where post_id = :id");
@@ -34,7 +41,7 @@ function getById($id)
     $cord-> fetchAll();
 }
 
-// REMOVE DATA FROM DATABASE BY USING INDEX================
+// REMOVE POST FROM DATABASE BY USING ID=======================
 function deletePost($id)
 {
     global $database;
@@ -45,7 +52,7 @@ function deletePost($id)
 }
 
 
-// UPDATE DATA ON DATABASE ================================
+// UPDATE POST ON DATABASE ================================
 function updatePost($post_id,$description,$image)
 {
     global $database;

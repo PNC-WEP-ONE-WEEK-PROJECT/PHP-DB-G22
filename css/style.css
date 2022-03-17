@@ -1,0 +1,20 @@
+body{
+    font-family: sans-serif;
+    background:rgba(175, 169, 169, 0.767);
+}
+
+.container{
+    width: 50%;
+    height:70vh;
+    background-color:#ffffffc7;
+    border-radius:10px ;
+}
+.nav h2{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    color: #2f97ef;
+    font-weight: bold;
+}
+
+
