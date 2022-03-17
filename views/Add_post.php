@@ -1,9 +1,15 @@
 <?php
 require_once '../templates/header.php';
 ?>
+<div class="nav">
+        <h3>Facebook</h3>
+        <ul>
+            <li><a href="#">+Add post</a></li>
+        </ul>
+</div>
 <div class="container">
     <!-- Your code here -->
-    <form action="../controllers/Add_post.php" method = 'POST'  enctype="multipart/form-data" class="p-5 mt-5">
+    <form action="../controllers/add_post.php" method = 'POST'  enctype="multipart/form-data" class="p-5 mt-5">
         <div class="title mt-4">
             <h2>Facebook</h2>     
         </div>
