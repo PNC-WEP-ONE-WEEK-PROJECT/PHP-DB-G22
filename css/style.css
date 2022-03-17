@@ -4,16 +4,57 @@ body{
 }
 
 .container{
-    width: 50%;
+    width: 45%;
     height:70vh;
     background-color:#ffffffc7;
     border-radius:10px ;
 }
-.nav h2{
+.title h2{
     width: 100%;
     display: flex;
     justify-content:center;
     color: #2f97ef;
+    font-weight: bold;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(105, 223, 217, 0.329);
+    padding: 10px;
+}
+.nav h3{
+    color: #3d40ee;
+    font-weight: bold;
+    margin: 5px;
+}
+.sign_up{
+    width: 45%;
+    height:65vh;
+    background-color:#ffffffc7;
+    border-radius:10px ;
+    margin: auto;
+}
+.log h4{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: bold;
+}
+ul{
+    width: 13%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+li a{
+    text-decoration:none;
+    font-size: 17px;
+    color: #3d40ee;
     font-weight: bold;
 }
 

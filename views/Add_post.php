@@ -4,7 +4,7 @@ require_once '../templates/header.php';
 <div class="container">
     <!-- Your code here -->
     <form action="../controllers/Add_post.php" method = 'POST'  enctype="multipart/form-data" class="p-5 mt-5">
-        <div class="nav mt-4">
+        <div class="title mt-4">
             <h2>Facebook</h2>     
         </div>
         <div class="form-group mt-4">
