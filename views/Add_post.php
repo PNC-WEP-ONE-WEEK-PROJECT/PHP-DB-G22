@@ -11,7 +11,7 @@
             <input type="file" class="form-control" name="img" >
         </div>
         <div class="form-group mt-4">
-           <textarea name="description" class="form-control" placeholder="Description......" ></textarea>
+           <textarea name="description" class="form-control" placeholder=" " ></textarea>
         </div>
         <div class="form-group mt-4 d-grid">
             <button type="submit" class="btn btn-primary btn-block">Post</button>
