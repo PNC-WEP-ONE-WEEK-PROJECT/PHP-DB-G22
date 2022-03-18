@@ -11,7 +11,11 @@
             <input type="file" class="form-control" name="img" >
         </div>
         <div class="form-group mt-4">
+<<<<<<< HEAD
            <textarea name="description" class="form-control" placeholder="text" ></textarea>
+=======
+           <textarea name="description" class="form-control" placeholder=" " ></textarea>
+>>>>>>> f1dde5d036b9c4f5936faae00de4c1e7795d65a1
         </div>
         <div class="form-group mt-4 d-grid">
             <button type="submit" class="btn btn-primary btn-block">Post</button>
