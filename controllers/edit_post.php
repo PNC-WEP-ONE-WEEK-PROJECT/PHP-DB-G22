@@ -1,4 +1,6 @@
 <?php
+
+// connect to post 
     require_once('../models/post.php');
     $id = $_POST['id'];
     $discription=$_POST['description'];
