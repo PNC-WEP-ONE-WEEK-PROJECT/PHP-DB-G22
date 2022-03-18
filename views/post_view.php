@@ -20,11 +20,11 @@ foreach($conts as $cont):
             <img src="../images/<?= $cont['image']?>" alt="">
             <div class="option">
                 <div class="like">
-                    <i class="fa fa-thumbs-o-up" style="font-size : 26px"></i>
+                    <i class="fa fa-thumbs-o-up" ></i>
                     <p>like</p>
                 </div>
                 <div class="comment">
-                    <i class="fa fa-commenting-o" style="font-size : 26px"></i>
+                    <i class="fa fa-commenting-o" ></i>
                     <p>comment</p>
                 </div>
             </div>

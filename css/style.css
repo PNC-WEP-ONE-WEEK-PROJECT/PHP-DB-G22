@@ -91,6 +91,9 @@ li a{
     justify-content: space-between;
     margin-left: 2%;
 }
+.like, .comment{
+    font-size: 25px;
+}
 
 .trash{
     margin-left:90%
