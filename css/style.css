@@ -1,7 +1,9 @@
 body{
-    font-family: sans-serif;
     background:rgba(175, 169, 169, 0.767);
 }
+
+/* Add post =============================*/
+
 .container{
     width: 45%;
     height:70vh;
@@ -15,31 +17,23 @@ body{
     color: #2f97ef;
     font-weight: bold;
 }
+
+
+/* Display post style ====================================*/
 .nav{
+    position:fixed; top:0;
+    z-index: 1;
     width: 100%;
     display: flex;
     justify-content:space-between;
-    background-color: rgba(105, 223, 217, 0.329);
+    background-color: rgba(31, 184, 171, 0.349);
     padding: 10px;
+    font-family: sans-serif;
 }
 .nav h3{
     color: #3d40ee;
     font-weight: bold;
     margin: 5px;
-}
-.sign_up{
-    width: 45%;
-    height:65vh;
-    background-color:#ffffffc7;
-    border-radius:10px ;
-    margin: auto;
-}
-.log h4{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    color: rgba(0, 0, 0, 0.664);
-    font-weight: bold;
 }
 ul{
     width: 13%;
@@ -52,22 +46,21 @@ ul li{
 }
 li a{
     text-decoration:none;
-    font-size: 17px;
+    font-size: 20px;
     color: #3d40ee;
     font-weight: bold;
 }
-
-.card{
-    
-    margin: auto;
-    width: 80vh;
-    background: #ffffffc7;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    
+.post_contain{
+    width: 100%;
+    margin-top: 95px;
 }
-
+.card{
+    width: 45%;
+    background: #ffffffb7;
+    border-radius: 10px; 
+    margin:auto; 
+    margin-top: 20px;
+}
 .head{
     display: flex;
     justify-content: space-between;
@@ -77,17 +70,43 @@ li a{
     height: 12vh;
     border-radius: 40px;
     padding: 10px;
+
+}
+.description p{
+    margin-left: 2%;
 }
 .head strong {
     margin-top: 20px;
 }
 .body img {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 2%;
+    width: 96%;
+    border-radius: 10px;
   
 }
 .option{
-    margin-top:10px;
+    width:40%;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    margin-left: 2%;
 }
+
+.trash{
+    margin-left:90%
+}
+.like, .comment{
+    display: flex;
+    margin: 10px;
+    padding:5px;
+    margin-top: 10px;
+}
+.like p, .comment p{
+    margin-left:10%;
+    font-family: serif;
+    font-size: 18px;
+
+}
+
+
+
