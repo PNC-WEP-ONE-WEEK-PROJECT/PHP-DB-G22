@@ -8,7 +8,7 @@ if (isset($id) and $_SERVER['REQUEST_METHOD'] == 'POST') {
     $discription = $_POST['description'];
     $image = $_FILES['img']['name'];
 
-    if (!empty($id) and !empty($discription) and !empty($image)) {
+    if (!empty($id) and (!empty($discription) or !empty($image))) {
         // 2 - Move the file to the image /folder  
         move_uploaded_file($_FILES['img']['tmp_name'], "../images/" . $image);
 

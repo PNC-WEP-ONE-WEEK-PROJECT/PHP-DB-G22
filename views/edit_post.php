@@ -1,13 +1,14 @@
 <?php
 require_once '../templates/header.php';
+require_once 'nav.php';
 ?>
 <div class="container">
 <?php
   require_once '../models/post.php';
-  $id=$_REQUEST['id'];
+  $id=$_GET['id'];
   $listPost=getPostById($id);
   foreach($listPost as $list){
-  
+ 
 ?>
     <!-- Your code here -->
     <form action="../controllers/edit_post.php" method="post" enctype="multipart/form-data" class="p-5 mt-5">
@@ -22,7 +23,10 @@ require_once '../templates/header.php';
             <textarea name="description" class="form-control"><?=$list['description']?></textarea>
             </div>
             <div class="form-group mt-4 d-grid">
-                <button type="submit" class="btn btn-primary btn-block">Save</button>
+                <button type="submit" class="btn btn-success btn-block">Save</button>
+            </div>
+            <div class="form-group mt-4 d-grid">
+                <button type="submit" class="btn btn-danger btn-block">cancel</button>
             </div>
     </form>
 </div>
