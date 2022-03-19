@@ -1,5 +1,6 @@
 <?php
     require_once('../templates/header.php');
+    require_once 'nav.php';
 ?>
 <div class="container">
     <!-- Your code here -->
@@ -14,7 +15,10 @@
            <textarea name="description" class="form-control" placeholder="text" ></textarea>
         </div>
         <div class="form-group mt-4 d-grid">
-            <button type="submit" class="btn btn-primary btn-block">Post</button>
+            <button type="submit" class="btn btn-success btn-block">Post</button>
+        </div>
+        <div class="form-group mt-4 d-grid">    
+            <button type="submit" class="btn btn-danger btn-block">cancel</button>
         </div>
     </form>
 </div>
