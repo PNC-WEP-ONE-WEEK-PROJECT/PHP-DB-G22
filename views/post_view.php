@@ -23,8 +23,8 @@ foreach($conts as $cont):
                 <div class="like">
                     <form action="../controller/likes.php"  method="POST">
                         <input type="hidden" name="user_id" value="<?php echo $id ?>" >
-                        <i class="fa fa-thumbs-o-up" ></i>
-                        <button type="submit">Like</button>
+                        <button type="submit"> <i class="fa fa-thumbs-o-up"> </i>Like</button>
+                        
                     </form>
                 </div>
                 <div class="comment">

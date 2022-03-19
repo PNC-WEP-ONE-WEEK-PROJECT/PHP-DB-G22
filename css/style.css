@@ -111,5 +111,8 @@ li a{
 
 }
 
-
+button {
+    border:none;
+    font-size:16px;
+}
 

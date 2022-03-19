@@ -67,13 +67,13 @@ function updatePost($post_id,$description,$image)
     return $statment-> fetch();
 }
 // DISPLAY LIKE =====================================
-function likePost($like_number, $user_id, $post_id) 
+function likePost($like_number, $user_id, $post_id)
 {
     global $database;
-    $likes = $database -> prepare("INSERT INTO likes (like_number, user_id, post_id) VALUES (:like_number, :user_id, :post_id)";
+    $likes = $database -> prepare("INSERT INTO likes (like_number, user_id, post_id) VALUES (:like_number, :user_id, :post_id)");
     $likes -> execute ([
         ':like_number' => $like_number,
         ':user_id' => $user_id,
-        ':post_id' => $post_id
-    ]) 
+        ':post_id' => $post_id,
+    ]);
 }
