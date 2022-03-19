@@ -1,7 +1,7 @@
 
 <div class="post_contain">
 <?php
-require_once '../models/post.php';
+require_once 'models/post.php';
 $conts = getAllPost();
 foreach($conts as $cont):
 ?>
