@@ -14,17 +14,21 @@ foreach($conts as $cont):
             <a href="views/edit_post.php?id=<?=$cont['post_id']?>"><i class="fa fa-edit" style="font-size : 26px;"></i></a>     
         </div>
         <div class="body">
+            
             <div class="description">
                 <p><?= $cont['description']?></p>
             </div>
             <img src="../images/<?= $cont['image']?>" alt="">
             <div class="option">
                 <div class="like">
-                    <i class="fa fa-thumbs-o-up" ></i>
-                    <p>like</p>
+                    <form action="../controller/likes.php"  method="POST">
+                        <input type="hidden" name="user_id" value="<?php echo $id ?>" >
+                        <i class="fa fa-thumbs-o-up" ></i>
+                        <button type="submit">Like</button>
+                    </form>
                 </div>
                 <div class="comment">
-                    <i class="fa fa-commenting-o" ></i>
+                    <i class="fa fa-commenting-o" ></i> 
                     <p>comment</p>
                 </div>
             </div>

@@ -7,3 +7,4 @@
     require_once('views/post_view.php');
     require_once('./templates/footer.php');
 ?>
+
