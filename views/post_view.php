@@ -1,7 +1,7 @@
 
 <div class="post_contain">
 <?php
-require_once './models/post.php';
+require_once '../models/post.php';
 $conts = getAllPost();
 foreach($conts as $cont):
 ?>
@@ -14,6 +14,7 @@ foreach($conts as $cont):
             <a href="views/edit_post.php?id=<?=$cont['post_id']?>"><i class="fa fa-edit" style="font-size : 26px;"></i></a>     
         </div>
         <div class="body">
+            
             <div class="description">
                 <p><?= $cont['description']?></p>
             </div>
