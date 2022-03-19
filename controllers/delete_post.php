@@ -6,5 +6,4 @@ if (isset($_GET['id'])) {
     deletePost($id);
 }
 
-
 header('Location: ../index.php');
