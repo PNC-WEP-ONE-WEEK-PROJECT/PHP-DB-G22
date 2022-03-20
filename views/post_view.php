@@ -2,6 +2,7 @@
 <div class="post_contain">
 <?php
 require_once 'models/post.php';
+require_once 'models/like.php';
 $conts = getAllPost();
 foreach($conts as $cont):
 ?>
@@ -20,19 +21,29 @@ foreach($conts as $cont):
             </div>
             <img src="../images/<?= $cont['image']?>" alt="">
             <div class="number">
-                <p>2K</p>
-                <p>880 Comments</p>
+
+                <?php
+                $likes = getLikePost($cont['post_id']);
+                foreach ($likes as $like):
+                ?>
+                <p><?= $like['number_Of_like']?></p>
+                <?php 
+                endforeach
+                ?>
+                <p>0 Comments</p>
             </div>
             <div class="option">
 
                 <div class="like">
-                    <form method="controllers/likes.php" action="POST" class="like_post">
-                        <input type="hidden" name="id" value="<?php echo $user_id ?>" >
+                    <form action="../controllers/likes.php" method="POST">
+                        <input type="hidden" name="post_id" value="<?php echo $cont['post_id'] ?>" >
+
                         <button type="submit" class="btn"><i class="fa fa-thumbs-o-up box" ></i>Like</button>
                     </form>
                 </div>
                 <div class="comment">
-                    <form method="post" action="POST" class="like_post">
+
+                    <form  action ="" method="POST">
                         <i class='far fa-comment-alt' style='font-size:24px'></i>
                         <input type="hidden" name="id" value="<?php echo $user_id ?>" >
                         <button type="submit" class="btn" name="postComment"><i class="fa fa-comment-o box" ></i>Comment</button>

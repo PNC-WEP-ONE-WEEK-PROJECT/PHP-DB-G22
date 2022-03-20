@@ -14,7 +14,7 @@ require_once '../templates/header.php';
             <div class="title mt-4">
                 <h2>Facebook</h2>     
             </div>
-            <input type="hidden" name="id" value="<?php echo $user_id ?>" >
+            <input type="hidden" name="id" value="<?php echo $id ?>" >
             <div class="form-group mt-4">
                 <input type="file" class="form-control" name="img" value="../image/<?=$list['image']?>" />
             </div>
