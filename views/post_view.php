@@ -26,16 +26,16 @@ foreach($conts as $cont):
             <div class="option">
 
                 <div class="like">
-                    <form method="controllers/likes.php" action="POST">
+                    <form method="controllers/likes.php" action="POST" class="like_post">
                         <input type="hidden" name="id" value="<?php echo $user_id ?>" >
                         <button type="submit" class="btn"><i class="fa fa-thumbs-o-up box" ></i>Like</button>
                     </form>
                 </div>
                 <div class="comment">
-                    <form method="post" action="POST">
+                    <form method="post" action="POST" class="like_post">
                         <i class='far fa-comment-alt' style='font-size:24px'></i>
                         <input type="hidden" name="id" value="<?php echo $user_id ?>" >
-                        <button type="submit" class="btn"><i class="fa fa-comment-o box" ></i>Comment</button>
+                        <button type="submit" class="btn" name="postComment"><i class="fa fa-comment-o box" ></i>Comment</button>
                     </form>
                 </div>
             </div>

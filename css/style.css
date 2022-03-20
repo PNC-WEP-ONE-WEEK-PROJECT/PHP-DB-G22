@@ -114,30 +114,17 @@ li a{
     margin-left:95%
 }
 
-.like, .comment{
-    display: flex;
-    margin: 10px;
-    padding:5px;
-    margin-top: 10px;
-}
-.like p, .comment p{
-    margin-left:10%;
-    font-family: serif;
-    font-size: 18px;
-
-}
-
 .add_comment{
     width: 80%;
     display: flex;
     margin:10px; 
-    margin-top: 0;  
+    margin-top: 5px;  
 }
 .add_comment img{
     width: 12vh;
     height: 12vh;
     border-radius: 40px;
-    padding: 13px;
+    padding: 14px;
 }
 .add_comment .put_comment{
     padding-left: 3%;
@@ -151,10 +138,16 @@ li a{
     background-color:rgba(255, 255, 255, 0.637);
     font-family: serif;
 }
-.btn{
-    font-size: 16px;
+.like_post .btn{
+    font-size: 17px;
     padding:4px;
+    font-family: serif;	
+    font-weight: bold;
 }
 .box {
     margin:8px;
+    font-size: 17px;
+    padding:4px;
+    font-family: serif;	
+    font-weight: bold;
 }
