@@ -4,7 +4,12 @@ require_once 'database.php';
 function likePost($like_number, $user_id, $post_id)
 {
     global $database;
-    $likes = $database -> prepare("INSERT INTO likes (like_number, user_id, post_id) VALUES (:like_number, :user_id, :post_id)");
+    $userLiked = $database -> prepare("SELECT from likes where post_id = :post_id and user_id = :user_id");
+    if($userLiked != null){
+        $likes = $database -> prepare("INSERT INTO likes (like_number, user_id, post_id) VALUES (:like_number, :user_id, :post_id)");
+    }else{
+        $likes = $database -> prepare("DELETE FROM likes where post_id = :post_id");
+    }
     $likes -> execute ([
         ':like_number' => $like_number,
         ':user_id' => $user_id,

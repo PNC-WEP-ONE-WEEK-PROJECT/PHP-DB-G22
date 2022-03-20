@@ -30,7 +30,7 @@ foreach($conts as $cont):
                 <?php 
                 endforeach
                 ?>
-                <p>880 Comments</p>
+                <p>0 Comments</p>
             </div>
             <div class="option">
 
