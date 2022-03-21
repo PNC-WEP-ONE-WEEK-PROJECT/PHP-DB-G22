@@ -106,25 +106,8 @@ li a{
 	font-size: 18px;
 	margin-left: 3%;
 }
-.like, .comment{
-	font-size: 25px;
-}
-
 .trash{
 	margin-left:95%
-}
-
-.like, .comment{
-	display: flex;
-	margin: 10px;
-	padding:5px;
-	margin-top: 10px;
-}
-.like p, .comment p{
-	margin-left:10%;
-	font-family: serif;
-	font-size: 18px;
-
 }
 
 .add_comment{
@@ -151,10 +134,13 @@ li a{
 	background-color:rgba(255, 255, 255, 0.637);
 	font-family: serif;
 }
-.btn{
-	font-size: 16px;
-	padding:4px;
-}
 .box {
-	margin:8px;
+    margin:8px;
+    font-size:17px;
+    padding:4px;
+    font-family: serif;	
+    font-weight: bold;
+}
+select{
+    outline: none;
 }

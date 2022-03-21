@@ -1,6 +1,5 @@
 <?php
     require_once('../templates/header.php');
-    require_once 'nav.php';
 ?>
 <div class="container">
     <!-- Your code here -->

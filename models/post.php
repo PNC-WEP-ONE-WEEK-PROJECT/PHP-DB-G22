@@ -21,8 +21,6 @@ function addToPostList ($description,$user_id,$image)
         ]);
     }
 }
-
-
 // SELECT ALL POST FROM DATABASE==========================
 function getAllPost()
 {
@@ -54,8 +52,6 @@ function deletePost($id)
 
 
 }
-
-
 // UPDATE POST ON DATABASE ================================
 function updatePost($post_id,$description,$image)
 {
