@@ -1,141 +1,141 @@
 body{
-    background:rgba(175, 169, 169, 0.767);
+	background:rgba(175, 169, 169, 0.767);
 }
 
 /* Add post =============================*/
 
 .container{
-    margin-top: 95px;
-    width: 45%;
-    height:70vh;
-    background-color:#ffffffc7;
-    border-radius:10px ;
+	margin-top: 95px;
+	width: 45%;
+	height:70vh;
+	background-color:#ffffffc7;
+	border-radius:10px ;
 }
 .title h2{
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    color: #2f97ef;
-    font-weight: bold;
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	color: #2f97ef;
+	font-weight: bold;
 }
 
 
 /* Display post style ====================================*/
 .nav{
-    position:fixed; top:0;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    background-color: rgba(31, 184, 171, 0.349);
-    padding: 10px;
-    font-family: sans-serif;
+	position:fixed; top:0;
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	background-color: rgba(31, 184, 171, 0.349);
+	padding: 10px;
+	font-family: sans-serif;
 }
 .nav_bar{
    width:30% ;
    background-color:burlywood;
 }
 .nav h3{
-    color: #3d40ee;
-    font-weight: bold;
-    margin: 5px;
-    padding:10px
+	color: #3d40ee;
+	font-weight: bold;
+	margin: 5px;
+	padding:10px
 }
 ul{
-    width: 13%;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+	width: 13%;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
 }
 ul li{
-    list-style: none;
+	list-style: none;
 }
 li a{
-    text-decoration:none;
-    font-size: 20px;
-    color: #3d40ee;
-    font-weight: bold;
+	text-decoration:none;
+	font-size: 20px;
+	color: #3d40ee;
+	font-weight: bold;
 }
 .home-bar{
     border-bottom: 3px solid #3d40ee;
 }
 .post_contain{
-    width: 100%;
-    margin-top: 95px;
+	width: 100%;
+	margin-top: 95px;
 }
 .card{
-    width: 45%;
-    background: #ffffffb7;
-    border-radius: 10px; 
-    margin:auto; 
-    margin-top: 20px;
+	width: 45%;
+	background: #ffffffb7;
+	border-radius: 10px; 
+	margin:auto; 
+	margin-top: 20px;
 }
 .head{
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .head img{
-    width: 12vh;
-    height: 12vh;
-    border-radius: 40px;
-    padding: 10px;
+	width: 12vh;
+	height: 12vh;
+	border-radius: 40px;
+	padding: 10px;
 
 }
 .description p{
-    margin-left: 2%;
+	margin-left: 2%;
 }
 .head strong {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 .body img {
-    margin-left: 2%;
-    width: 96%;
-    border-radius: 10px;
+	margin-left: 2%;
+	width: 96%;
+	border-radius: 10px;
   
 }
 .option{
-    width:45%;
-    margin-top:0;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 2%;
+	width:45%;
+	margin-top:0;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 2%;
 }
 .number{
-    width:55%;
-    margin-top:30px;
-    display: flex;
-    justify-content: space-between;
-    font-family: serif;
-    font-size: 18px;
-    margin-left: 3%;
+	width:55%;
+	margin-top:30px;
+	display: flex;
+	justify-content: space-between;
+	font-family: serif;
+	font-size: 18px;
+	margin-left: 3%;
 }
 .trash{
-    margin-left:95%
+	margin-left:95%
 }
 
 .add_comment{
-    width: 80%;
-    display: flex;
-    margin:10px; 
-    margin-top: 5px;  
+	width: 80%;
+	display: flex;
+	margin:10px; 
+	margin-top: 0;  
 }
 .add_comment img{
-    width: 12vh;
-    height: 12vh;
-    border-radius: 40px;
-    padding: 14px;
+	width: 12vh;
+	height: 12vh;
+	border-radius: 40px;
+	padding: 13px;
 }
 .add_comment .put_comment{
-    padding-left: 3%;
-    width: 100%;
-    height: 6vh;
-    border-radius:20px;
-    border:none;
-    outline: none;
-    margin-top: 17px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.514) 0px 0px 0px 1px inset;
-    background-color:rgba(255, 255, 255, 0.637);
-    font-family: serif;
+	padding-left: 3%;
+	width: 100%;
+	height: 6vh;
+	border-radius:20px;
+	border:none;
+	outline: none;
+	margin-top: 17px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.514) 0px 0px 0px 1px inset;
+	background-color:rgba(255, 255, 255, 0.637);
+	font-family: serif;
 }
 .box {
     margin:8px;
