@@ -7,19 +7,17 @@ body{
 .container{
 	margin-top: 95px;
 	width: 45%;
-	height:70vh;
+	height:75vh;
 	background-color:#ffffffc7;
 	border-radius:10px ;
 }
 .title h2{
-	width: 100%;
 	display: flex;
 	justify-content:center;
 	color: #2f97ef;
-	font-weight: bold;
+    margin-top: 15px;
+    font-weight: bold;
 }
-
-
 /* Display post style ====================================*/
 .nav{
 	position:fixed; top:0;
@@ -28,7 +26,7 @@ body{
 	display: flex;
 	justify-content:space-between;
 	background-color: rgba(31, 184, 171, 0.349);
-	padding: 10px;
+	padding: 5px;
 	font-family: sans-serif;
 }
 .nav_bar{
@@ -55,7 +53,8 @@ li a{
 	font-size: 20px;
 	color: #3d40ee;
 	font-weight: bold;
-}
+} 
+
 .home-bar{
     border-bottom: 3px solid #3d40ee;
 }
@@ -146,4 +145,8 @@ li a{
 }
 select{
     outline: none;
+}
+.register{
+    width:100%;
+    display: flex;
 }

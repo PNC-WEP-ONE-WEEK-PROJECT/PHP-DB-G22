@@ -1,13 +1,21 @@
 <?php
     require_once('../templates/header.php');
+    require_once 'nav.php';
 ?>
 <div class="container">
-    <!-- Your code here -->
-    <form action="../controllers/add_post.php" method = 'POST'  enctype="multipart/form-data" class="p-5 mt-5">
-        <div class="title mt-4">
-            <h2>Facebook</h2>     
+    <div class="head ">
+        <div class="user">
+            <img src="../images/pf.jpg" alt=""> 
+            <strong>Sophy Lida</strong>
         </div>
-        <div class="form-group mt-4">
+    </div>
+_______________________________________________________________________________________________
+    <!-- Your code here -->
+    <div class="title mt-0">
+        <h2>Add your post</h2>     
+    </div>
+    <form action="../controllers/add_post.php" method = 'POST'  enctype="multipart/form-data" class="p-5 mt-1">
+        <div class="form-group mt-7 ">
             <input type="file" class="form-control" name="img" >
         </div>
         <div class="form-group mt-4">
