@@ -56,6 +56,9 @@ li a{
     color: #3d40ee;
     font-weight: bold;
 }
+.home-bar{
+    border-bottom: 3px solid #3d40ee;
+}
 .post_contain{
     width: 100%;
     margin-top: 95px;
